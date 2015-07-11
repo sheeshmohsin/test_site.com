@@ -8,7 +8,7 @@ from django.template import RequestContext
 # Create your views here.
 
 def home(request):
-    return HttpResponse('home.html')
+    return render_to_response('home.html')
 
 def upload(request):
     if request.method=="POST":
