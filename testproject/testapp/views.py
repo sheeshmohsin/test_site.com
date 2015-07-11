@@ -6,7 +6,7 @@ from django.template import RequestContext
 # Create your views here.
 
 def upload(request):
-    if request.method="POST":
+    if request.method=="POST":
         form = UploadFileForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
